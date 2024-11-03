@@ -1,0 +1,19 @@
+meta {
+  name: Edit
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{PATH}}/points_interest/edfde0a6-89bd-4f49-8496-08dcfbaca9c7
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "string2",
+    "description": "string2",
+    "destinationId": "f7472254-e813-4277-ebdb-08dcfbac8c3d"
+  }
+}

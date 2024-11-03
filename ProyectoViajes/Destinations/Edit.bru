@@ -1,0 +1,20 @@
+meta {
+  name: Edit
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{PATH}}/destinations/f7472254-e813-4277-ebdb-08dcfbac8c3d
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Machu pichu",
+    "description": "string1",
+    "location": "string1",
+    "imageUrl": "string1"
+  }
+}

@@ -1,0 +1,20 @@
+meta {
+  name: Create
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{PATH}}/destinations
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "string",
+    "description": "string",
+    "location": "string",
+    "imageUrl": "string"
+  }
+}

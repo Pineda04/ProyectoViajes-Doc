@@ -1,0 +1,19 @@
+meta {
+  name: Create
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{PATH}}/points_interest
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "string",
+    "description": "string",
+    "destinationId": "f7472254-e813-4277-ebdb-08dcfbac8c3d"
+  }
+}
