@@ -1,0 +1,20 @@
+meta {
+  name: Create
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{PATH}}/activities
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Actividad 2",
+    "description": "string",
+    "price": 200,
+    "travelPackageId": "63671240-e1c9-45a3-46ad-08dcfc4ff47b"
+  }
+}

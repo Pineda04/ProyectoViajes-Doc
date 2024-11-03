@@ -1,0 +1,22 @@
+meta {
+  name: Create
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{PATH}}/travel_packages
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Paquete de viajes 1",
+    "description": "Paquete 1",
+    "price": 100,
+    "duration": 3,
+    "numberPerson": 2,
+    "destinationId": "5aabe2bb-cf1e-49e8-761c-08dcfc4f97ea"
+  }
+}
