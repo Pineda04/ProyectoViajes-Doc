@@ -5,12 +5,16 @@ meta {
 }
 
 get {
-  url: {{PATH}}/points_interest?searchTerm&page=1
+  url: {{PATH}}/users?searchTerm=&page=1
   body: none
-  auth: none
+  auth: bearer
 }
 
 query {
   searchTerm: 
   page: 1
+}
+
+auth:bearer {
+  token: {{TOKEN}}
 }

@@ -7,7 +7,11 @@ meta {
 put {
   url: {{PATH}}/destinations/f7472254-e813-4277-ebdb-08dcfbac8c3d
   body: json
-  auth: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{TOKEN}}
 }
 
 body:json {

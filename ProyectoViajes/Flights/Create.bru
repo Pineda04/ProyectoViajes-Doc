@@ -1,0 +1,27 @@
+meta {
+  name: Create
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{PATH}}/flights
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{TOKEN}}
+}
+
+body:json {
+  {
+    "typeFlightId": "c199fa5f-9628-4b24-b0e6-08dcfd18ca20",
+    "destinationId": "e6f9c0f1-0d9b-4d9b-97e1-0e3a3e56b5c4",
+    "airline": "string",
+    "origin": "string",
+    "departureDate": "2024-11-04T18:33:45.121Z",
+    "arrivalDate": "2024-11-04T18:33:45.121Z",
+    "price": 0
+  }
+}

@@ -7,14 +7,17 @@ meta {
 post {
   url: {{PATH}}/activities
   body: json
-  auth: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{TOKEN}}
 }
 
 body:json {
   {
     "name": "Actividad 2",
     "description": "string",
-    "price": 200,
-    "travelPackageId": "63671240-e1c9-45a3-46ad-08dcfc4ff47b"
+    "travelPackageId": "c1b9b3f4-0b32-4590-b0e4-053e7e69ae99"
   }
 }

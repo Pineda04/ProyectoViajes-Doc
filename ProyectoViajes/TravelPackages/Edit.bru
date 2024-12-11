@@ -5,15 +5,23 @@ meta {
 }
 
 put {
-  url: {{PATH}}/travel_packages/
+  url: {{PATH}}/travel_packages/c1b9b3f4-0b32-4590-b0e4-053e7e69ae99
   body: json
-  auth: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{TOKEN}}
 }
 
 body:json {
   {
-    "name": "string2",
-    "description": "string2",
-    "destinationId": "f7472254-e813-4277-ebdb-08dcfbac8c3d"
+    "name": "Fuji y Naturaleza",
+    "description": "Excursión de un día al Monte Fuji y sus alrededores.",
+    "price": 250,
+    "duration": 1,
+    "numberPerson": 2,
+    "imageUrl": "https://parispasoapasotour2183a.zapwp.com/q:intelligent/r:0/wp:0/w:1/u:https://parispasoapasotours.com/wp-content/uploads/2022/12/tour-paris-nocturno.jpg",
+    "destinationId": "e6f9c0f1-0d9b-4d9b-97e1-0e3a3e56b5c4"
   }
 }

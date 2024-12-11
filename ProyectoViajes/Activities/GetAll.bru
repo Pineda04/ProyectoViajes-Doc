@@ -5,7 +5,12 @@ meta {
 }
 
 get {
-  url: {{PATH}}/activities
+  url: {{PATH}}/activities?searchTerm=recorrido por el&page=1
   body: none
   auth: none
+}
+
+query {
+  searchTerm: recorrido por el
+  page: 1
 }

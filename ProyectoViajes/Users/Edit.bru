@@ -1,0 +1,24 @@
+meta {
+  name: Edit
+  type: http
+  seq: 4
+}
+
+put {
+  url: {{PATH}}/users/5761b625-7f3c-4e13-ba5e-121fb53ad076
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{TOKEN}}
+}
+
+body:json {
+  {
+    "firstName": "Usuario",
+    "lastName": "Proyecto Viajes",
+    "email": "user@proyecto.viajes",
+    "imageUrl": "string"
+  }
+}

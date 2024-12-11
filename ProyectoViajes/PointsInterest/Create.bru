@@ -7,13 +7,17 @@ meta {
 post {
   url: {{PATH}}/points_interest
   body: json
-  auth: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{TOKEN}}
 }
 
 body:json {
   {
-    "name": "string",
+    "name": "Punto 1",
     "description": "string",
-    "destinationId": "f7472254-e813-4277-ebdb-08dcfbac8c3d"
+    "destinationId": "5aabe2bb-cf1e-49e8-761c-08dcfc4f97ea"
   }
 }

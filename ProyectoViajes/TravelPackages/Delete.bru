@@ -7,5 +7,9 @@ meta {
 delete {
   url: {{PATH}}/travel_packages
   body: none
-  auth: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{TOKEN}}
 }

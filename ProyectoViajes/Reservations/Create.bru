@@ -1,0 +1,25 @@
+meta {
+  name: Create
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{PATH}}/reservations
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{TOKEN}}
+}
+
+body:json {
+  {
+    "travelPackageId": "c1b9b3f4-0b32-4590-b0e4-053e7e69ae99",
+    "flightId": "7a340b65-8bdf-4786-b697-42c5d17f9d4b",
+    "hostingId": "c3f8b7e9-0b6a-4524-a72f-7d6b904d881a",
+    "reservationDate": "2024-12-11T15:01:34.439Z",
+    "userId": "bab85533-a0ff-4137-865f-fe765247a447"
+  }
+}

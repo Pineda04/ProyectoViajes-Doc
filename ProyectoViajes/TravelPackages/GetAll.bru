@@ -5,7 +5,13 @@ meta {
 }
 
 get {
-  url: {{PATH}}/travel_packages
+  url: {{PATH}}/travel_packages?page=1&starRange&searchTerm
   body: none
   auth: none
+}
+
+query {
+  page: 1
+  starRange: 
+  searchTerm: 
 }
